@@ -28,7 +28,7 @@ const Blog = () => {
           <div
             key={article.id}
             className={scss.articleCard}
-            onClick={() => router.push("/details/${article.id}")}
+            onClick={() => router.push(`/details/${article.id}`)}
           >
             <div className={scss.imageContainer}>
               <Image

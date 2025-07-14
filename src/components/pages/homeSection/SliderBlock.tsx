@@ -3,9 +3,10 @@ import React, { useEffect, useState, useCallback } from "react";
 import Image from "next/image";
 import scss from "./SliderBlock.module.scss";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
+import { StaticImageData } from "next/image";
 
 interface SlideItem {
-  img: any;
+  img: string | StaticImageData;
 }
 
 interface Props {

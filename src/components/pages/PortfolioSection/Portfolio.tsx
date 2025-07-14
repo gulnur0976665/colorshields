@@ -24,8 +24,20 @@ const Portfolio = () => {
         className={scss.portfolioHero}
         style={{ backgroundImage: `url(${bgImage.src})` }}
       >
-        <img src={leftPaint.src} className={scss.paintLeft} alt="left" />
-        <img src={rightPaint.src} className={scss.paintRight} alt="right" />
+        <Image
+          src={leftPaint.src}
+          className={scss.paintLeft}
+          alt="left"
+          width={331}
+          height={331}
+        />
+        <Image
+          src={rightPaint.src}
+          className={scss.paintRight}
+          alt="right"
+          height={326}
+          width={326}
+        />
         <h1 className={scss.heroTitle}>Take a look at our projects</h1>
       </div>
 

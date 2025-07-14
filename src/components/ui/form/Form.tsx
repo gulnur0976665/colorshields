@@ -10,7 +10,7 @@ const questions = [
   {
     title: "What is your typical process for working with a new customer?",
     answer:
-      "When working with new customers, we begin with prompt and responsive communication upon their initial contact. We schedule a detailed consultation to understand their needs, offer recommendations, and provide a customized proposal. Once the proposal is accepted, we finalize a contract detailing project terms, including payment schedules and milestones. We assist in material selection and establish a project timeline aligned with the customer's preferences. Our skilled team executes the project, maintaining high-quality standards and conducting inspections for customer satisfaction. We value feedback, offer guarantees, and remain committed to addressing any post-project concerns promptly. Our goal is to ensure a positive and enduring relationship, meeting or exceeding customer expectations throughout the project.",
+      "When working with new customers, we begin with prompt and responsive communication upon their initial contact. We schedule a detailed consultation to understand their needs, offer recommendations, and provide a customized proposal. Once the proposal is accepted, we finalize a contract detailing project terms, including payment schedules and milestones. We assist in material selection and establish a project timeline aligned with the customers preferences. Our skilled team executes the project, maintaining high-quality standards and conducting inspections for customer satisfaction. We value feedback, offer guarantees, and remain committed to addressing any post-project concerns promptly. Our goal is to ensure a positive and enduring relationship, meeting or exceeding customer expectations throughout the project.",
   },
   {
     title:
@@ -29,9 +29,9 @@ const questions = [
 ];
 
 const Form = () => {
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
-  const toggleAccordion = (index: any) => {
+  const toggleAccordion = (index: number) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
@@ -74,12 +74,12 @@ const Form = () => {
           <div className={scss.blockForm}>
             <div className={scss.form1}>
               <div className={scss.texts}>
-                <h1>Let’s work together</h1>
+                <h1>Lets work together</h1>
                 <p>
                   Looking to take your kitchen or family room to the next level?
                   How about a new deck or hardwood floor? Feel free to send us a
-                  note to set up a free estimate. We’d love to hear from you.
-                  Let’s build something together!
+                  note to set up a free estimate. Wed love to hear from you.
+                  Lets build something together!
                 </p>
               </div>
               <Image src={color} alt="color" className={scss.colorImg} />

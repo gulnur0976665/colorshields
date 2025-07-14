@@ -158,8 +158,20 @@ const Reviews = () => {
           backgroundImage: `url(${bgImage.src})`,
         }}
       >
-        <img src={leftPaint.src} className={scss.paintLeft} alt="left" />
-        <img src={rightPaint.src} className={scss.paintRight} alt="right" />
+        <Image
+          src={leftPaint.src}
+          className={scss.paintLeft}
+          alt="left"
+          width={331}
+          height={331}
+        />
+        <Image
+          src={rightPaint.src}
+          className={scss.paintRight}
+          alt="right"
+          width={362}
+          height={362}
+        />
         <h1>Reviews from our clients</h1>
       </div>
 

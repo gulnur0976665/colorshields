@@ -28,8 +28,20 @@ const Gallery = () => {
           backgroundImage: `url(${bgImage.src})`,
         }}
       >
-        <img src={leftPaint.src} className={scss.heroPaintLeft} alt="left" />
-        <img src={rightPaint.src} className={scss.heroPaintRight} alt="right" />
+        <Image
+          src={leftPaint.src}
+          className={scss.heroPaintLeft}
+          width={331}
+          height={331}
+          alt="left"
+        />
+        <Image
+          src={rightPaint.src}
+          width={376}
+          height={376}
+          className={scss.heroPaintRight}
+          alt="right"
+        />
         <h1>GALLERY OF OUR WORKS</h1>
       </div>
 
@@ -50,7 +62,7 @@ const Gallery = () => {
                 <Image
                   key={idx}
                   src={photo.image}
-                  alt="img"
+                  alt="image"
                   width={400}
                   height={300}
                   className={scss.galleryImage}

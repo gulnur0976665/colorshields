@@ -48,9 +48,9 @@ const About = () => {
               </div>
               <div className={scss.descriptions}>
                 <p>
-                  We specialize in what others can't replicate delivering an
+                  We specialize in what others cant replicate delivering an
                   unparalleled level of craftsmanship. Our work is not just a
-                  service; it's the art of the art, a touch of magic in every
+                  service; its the art of the art, a touch of magic in every
                   project.
                 </p>
                 <p>
