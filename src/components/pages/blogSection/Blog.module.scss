@@ -1,0 +1,110 @@
+.Blog {
+  position: relative;
+  padding: 0 0 70px;
+  .vectorBg {
+    position: absolute;
+    top: 22.6%;
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
+  .titleBlock {
+    padding: 0 100px 40px;
+    display: flex;
+    align-items: center;
+    .subHr {
+      width: 38px;
+      border-width: 2px;
+      transform: rotate(-90deg);
+      border: 2px solid #fb4e4e;
+    }
+    .title {
+      color: white;
+      font-family: Helvetica Neue, sans-serif;
+      font-weight: 700;
+      font-size: 34px;
+      line-height: 100%;
+      text-transform: uppercase;
+    }
+  }
+
+  .content {
+    position: relative;
+    z-index: 9;
+    padding: 0px 140px 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    cursor: pointer;
+    .articleCard {
+      padding: 20px 45px;
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      width: 1171px;
+      height: 359px;
+      opacity: 1;
+      border-radius: 16px;
+      background: #ffffff;
+      box-shadow: 0px 2px 16px 0px #424c561a;
+      .imageContainer {
+        position: relative;
+        overflow: hidden;
+        width: 583px;
+        height: 365px;
+        border-radius: 16px;
+        .articleImage {
+          object-fit: cover;
+        }
+      }
+      .articleContent {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .articleHeader {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          .articleAuthor {
+            font-family: Helvetica Neue, sans-serif;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 24px;
+            line-height: 100%;
+          }
+          .articleMeta {
+            font-family: Helvetica Neue, sans-serif;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 16px;
+            line-height: 100%;
+            color: #131313;
+          }
+        }
+        .articleBody {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          .articleTitle {
+            width: 478px;
+            font-family: Helvetica Neue, sans-serif;
+            font-weight: 700;
+            font-style: Bold;
+            font-size: 35px;
+            line-height: 100%;
+            color: #131313;
+          }
+          .articleSummary {
+            width: 473px;
+            font-family: Helvetica Neue, sans-serif;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 18px;
+            line-height: 100%;
+            color: #131313;
+          }
+        }
+      }
+    }
+  }
+}

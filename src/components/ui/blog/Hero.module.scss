@@ -1,0 +1,62 @@
+.hero {
+  position: relative;
+  z-index: 9;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+
+  h1 {
+    font-family: Helvetica Neue, sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 50px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  @keyframes floatUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-33px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .paintLeft {
+    width: 381px;
+    height: 381px;
+    object-fit: contain;
+    position: absolute;
+    top: 240px;
+    left: 0;
+    animation: floatUpDown 3s ease-in-out infinite;
+  }
+  @keyframes floatDownUp {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(33px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .paintRight {
+    width: 376px;
+    object-fit: contain;
+    position: absolute;
+    top: 165px;
+    right: 0;
+    animation: floatDownUp 3s ease-in-out infinite;
+  }
+}

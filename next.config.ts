@@ -1,7 +1,10 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  images: {
+    domains: [
+      "fleetback-public-asset-bucket.s3.amazonaws.com", // сырттагы сүрөттөр үчүн
+    ],
+  },
 };
 
-export default nextConfig;
+module.exports = nextConfig;

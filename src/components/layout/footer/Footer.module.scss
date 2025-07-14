@@ -1,0 +1,84 @@
+.footer {
+  background: #000;
+  color: white;
+  padding: 70px 130px 30px;
+
+  .footerContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+
+    .columns {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 40px;
+
+      .logoBlock {
+        .logoImage {
+          width: 111px;
+          height: 169px;
+        }
+      }
+
+      .linksGroup {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        h5 {
+          font-family: "Helvetica Neue", sans-serif;
+          font-weight: 700;
+          font-size: 22px;
+          text-transform: uppercase;
+          line-height: 100%;
+          color: #fff;
+        }
+
+        p {
+          cursor: pointer;
+          font-family: "Helvetica Neue", sans-serif;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 100%;
+          color: #cbc9c9;
+
+          &:hover {
+            color: white;
+          }
+        }
+
+        .links {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+        }
+
+        .socialIcons {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+
+          .icon {
+            font-size: 25px;
+            cursor: pointer;
+
+            &:hover {
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+
+    .copyright {
+      text-align: center;
+      font-family: "Helvetica Neue", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 100%;
+      color: #cbc9c9;
+    }
+  }
+}

@@ -1,0 +1,226 @@
+.portfolio {
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.portfolioHero {
+  position: relative;
+  z-index: 9;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.heroTitle {
+  font-family: Helvetica Neue, sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.paintLeft,
+.paintRight,
+.paintBlue,
+.paintRed,
+.paintYellow {
+  position: absolute;
+  animation: floatUpDown 3s ease-in-out infinite;
+}
+
+.paintLeft {
+  width: 331px;
+  top: 230px;
+  left: 0;
+}
+
+.paintRight {
+  width: 326px;
+  top: 165px;
+  right: 0;
+  animation: floatDownUp 3s ease-in-out infinite;
+}
+
+.paintBlue {
+  top: 37%;
+  right: 0;
+  width: 255px;
+  object-fit: contain;
+}
+
+.paintRed {
+  top: 1337px;
+  left: -30px;
+  width: 347px;
+  object-fit: contain;
+  z-index: 10;
+}
+
+.paintYellow {
+  top: 50pc;
+  left: 0;
+  width: 300px;
+  object-fit: contain;
+  z-index: 10;
+}
+
+.portfolioContent {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+}
+
+.vectorBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.ellipseRedRight,
+.ellipseRedLeft {
+  position: absolute;
+  width: 346px;
+  height: 346px;
+  opacity: 0.5;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(251, 78, 78, 0.6) 0%,
+    rgba(251, 78, 78, 0) 100%
+  );
+}
+
+.ellipseRedRight {
+  top: 1340px;
+  right: 0;
+}
+
+.ellipseRedLeft {
+  top: 1550px;
+  left: -126px;
+}
+
+.project {
+  z-index: 9;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.projectHeader {
+  padding: 0 160px;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.projectLine {
+  width: 38px;
+  border: 2px solid #fb4e4e;
+  transform: rotate(-90deg);
+}
+
+.projectTitle {
+  font-family: Helvetica Neue, sans-serif;
+  font-weight: 700;
+  font-size: 34px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.projectBody {
+  padding: 0 117px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.projectGallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  width: 739px;
+  max-height: 254px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  direction: rtl;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  scrollbar-width: thin;
+  scrollbar-color: white rgba(255, 255, 255, 0.1);
+}
+
+.projectImage {
+  width: 284px;
+  height: 254px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.projectText {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  color: white;
+}
+
+.projectTextTitle {
+  font-family: Helvetica Neue, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.projectDescription {
+  width: 599px;
+  font-family: Helvetica Neue, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+/* Animations */
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatDownUp {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(33px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
