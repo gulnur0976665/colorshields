@@ -51,15 +51,16 @@ const Works = () => {
     arrows: false,
     responsive: [
       {
-        breakpoint: 1024,
-        settings: { slidesToShow: 2 },
+        breakpoint: 835,
+        settings: { slidesToShow: 2.5 },
       },
       {
-        breakpoint: 768,
-        settings: { slidesToShow: 1 },
+        breakpoint: 428,
+        settings: { slidesToShow: 1.7 },
       },
     ],
   };
+
   return (
     <div className={scss.Works}>
       <div className={scss.content}>

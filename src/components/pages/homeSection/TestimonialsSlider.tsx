@@ -152,11 +152,11 @@ const TestimonialsSlider = () => {
     arrows: false,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 769,
         settings: { slidesToShow: 2 },
       },
       {
-        breakpoint: 768,
+        breakpoint: 428,
         settings: { slidesToShow: 1 },
       },
     ],

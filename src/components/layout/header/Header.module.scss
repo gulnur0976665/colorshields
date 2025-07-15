@@ -3,16 +3,24 @@
   top: 40px;
   width: 100%;
   z-index: 99;
+  @media (max-width: 1280px) {
+    width: 90%;
+  }
 
   .headerContent {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     .logoImage {
       width: 86px;
       height: 133px;
       object-fit: contain;
+      @media (max-width: 1280px) {
+        padding-left: 60px;
+      }
+      @media (max-width: 428px) {
+        padding-left: 0;
+      }
     }
 
     .quoteButton {
@@ -28,7 +36,6 @@
       line-height: 100%;
       cursor: pointer;
       transition: background 0.3s ease;
-
       &:hover {
         background: #e03e3e;
       }

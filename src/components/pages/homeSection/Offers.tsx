@@ -37,7 +37,7 @@ const Offers = () => {
               </p>
             </div>
             <div className={scss.blockImg}>
-              <Image src={img2} alt="img2" />
+              <Image src={img2} alt="img2" className={scss.Image} />
               <div className={scss.blockText1}>
                 <h5>Epoxy Flooring</h5>
                 <p>

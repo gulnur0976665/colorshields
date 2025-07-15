@@ -26,25 +26,57 @@
   left: 0;
   z-index: 3;
   display: flex;
-
+  @media (max-width: 884px) {
+    top: 36%;
+  }
+  @media (max-width: 835px) {
+    top: 19%;
+  }
+  @media (max-width: 428px) {
+    top: 0;
+    flex-direction: column;
+  }
   .colorimg {
-    width: 1106px;
+    width: 100%;
+    max-width: 1106px;
     height: 549px;
     pointer-events: none;
     padding-top: 80px;
+    object-fit: contain;
+    @media (max-width: 884px) {
+      width: 800px;
+    }
+    @media (max-width: 835px) {
+      width: 580px;
+    }
+    @media (max-width: 428px) {
+      padding-top: 0;
+      margin-top: -150px;
+      width: 100%;
+    }
   }
 
   .overlayMenu {
     display: flex;
     flex-direction: column;
     gap: 28px;
-
+    @media (max-width: 884px) {
+      gap: 10px;
+    }
+    @media (max-width: 835px) {
+      margin-top: 7pc;
+    }
+    @media (max-width: 428px) {
+      margin-top: 13pc;
+    }
     .pageName {
       position: relative;
       width: 250px;
       height: 55px;
       cursor: pointer;
-
+      @media (max-width: 428px) {
+        height: 45px;
+      }
       .img {
         position: absolute;
         top: 0;
@@ -60,6 +92,10 @@
         transition: opacity 0.4s ease;
         width: 435px;
         height: 55px;
+        @media (max-width: 428px) {
+          width: 400px;
+          height: 45px;
+        }
       }
 
       .img {
@@ -78,7 +114,7 @@
         left: 20px;
         transform: translateY(-50%);
         margin: 0;
-        font-size: 16px;
+        font-size: clamp(14px, 1.5vw, 16px);
         color: white;
         z-index: 3;
         font-family: Helvetica Neue, sans-serif;

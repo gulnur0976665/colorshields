@@ -1,17 +1,34 @@
 .Offers {
   position: relative;
-  padding: 12pc 120px 0 120px;
-
+  padding: 13pc 120px 0 120px;
+  @media (max-width: 1280px) {
+    padding: 13pc 60px 0;
+  }
+  @media (max-width: 884px) {
+    padding: 9pc 60px 0 30px;
+  }
+  @media (max-width: 835px) {
+    padding-top: 13pc;
+    padding-left: 0;
+  }
+  @media (max-width: 428px) {
+    padding-top: 34pc;
+    padding-left: 0;
+  }
   .content {
     display: flex;
     flex-direction: column;
     gap: 10pc;
+    @media (max-width: 884px) {
+      gap: 80px;
+    }
     .Block1 {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       justify-content: center;
       gap: 30px;
+
       @keyframes floatUpDown {
         0% {
           transform: translateY(0);
@@ -28,15 +45,35 @@
         height: 271px;
         object-fit: cover;
         position: absolute;
-        top: 0;
+        top: 50px;
         left: 0;
         animation: floatUpDown 3s ease-in-out infinite;
+        @media (max-width: 884px) {
+          top: 0;
+        }
+        @media (max-width: 835px) {
+          top: 8pc;
+          width: 150px;
+          height: 150px;
+        }
+        @media (max-width: 428px) {
+          top: 30pc;
+          width: 130px;
+          height: 130px;
+        }
       }
       .block {
+        padding-left: 50px;
         color: white;
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 30px;
+        @media (max-width: 884px) {
+          padding-left: 50px;
+        }
+        @media (max-width: 428px) {
+          padding-left: 0;
+        }
         .titleBlock {
           display: flex;
           align-items: center;
@@ -49,7 +86,7 @@
           .title {
             font-family: Helvetica Neue, sans-serif;
             font-weight: 700;
-            font-size: 34px;
+            font-size: clamp(24px, 2.5vw, 34px);
             line-height: 100%;
             text-transform: uppercase;
           }
@@ -57,18 +94,32 @@
         .description {
           font-family: Helvetica Neue, sans-serif;
           font-weight: 400;
-          font-size: 20px;
+          font-size: clamp(16px, 1.8vw, 20px);
           line-height: 100%;
           padding-left: 20px;
         }
       }
       .blockImg {
         position: relative;
-        width: 1240px;
-        height: 290px;
-        border-radius: 16px;
-        padding-bottom: 64px;
-        padding-left: 25px;
+        .Image {
+          width: 100%;
+          max-width: 1240px;
+          height: 290px;
+          border-radius: 16px;
+          @media (max-width: 1280px) {
+            width: 1330px;
+          }
+          @media (max-width: 884px) {
+            width: 1160px;
+          }
+          @media (max-width: 835px) {
+            width: 790px;
+          }
+          @media (max-width: 428px) {
+            width: 100%;
+            height: 200px;
+          }
+        }
         .blockText1 {
           position: absolute;
           top: 22%;
@@ -77,23 +128,24 @@
           flex-direction: column;
           gap: 20px;
           h5 {
-            width: 176px;
             font-family: Helvetica Neue, sans-serif;
             font-weight: 700;
-            font-size: 24px;
+            font-size: clamp(18px, 2vw, 24px);
             line-height: 100%;
             color: #131313;
           }
           p {
-            width: 593px;
+            width: 100%;
+            max-width: 593px;
             font-family: Helvetica Neue, sans-serif;
             font-weight: 400;
-            font-size: 18px;
+            font-size: clamp(16px, 1.6vw, 18px);
             line-height: 100%;
             color: #131313;
           }
           button {
-            width: 433px;
+            width: 100%;
+            max-width: 433px;
             height: 41px;
             border-radius: 8px;
             padding-top: 10px;
@@ -103,12 +155,15 @@
             background: #fb4e4e;
             font-family: Helvetica Neue, sans-serif;
             font-weight: 700;
-            font-size: 14px;
+            font-size: clamp(12px, 1.4vw, 14px);
             line-height: 100%;
             color: #ffffff;
             border: none;
             outline: none;
             cursor: pointer;
+            @media (max-width: 428px) {
+              width: 340px;
+            }
           }
         }
       }
@@ -126,13 +181,16 @@
 
       .paint1 {
         position: absolute;
-        top: 35pc;
+        top: 64pc;
         right: 0;
         width: 264px;
         height: 264px;
         object-fit: cover;
-
+        z-index: 9;
         animation: floatUpDown 3s ease-in-out infinite;
+        @media (max-width: 428px) {
+          top: 72pc;
+        }
       }
     }
     .Block2 {
@@ -141,12 +199,18 @@
       align-items: flex-start;
       justify-content: center;
       gap: 70px;
+      @media (max-width: 884px) {
+        gap: 50px;
+      }
       .vectorBg {
         position: absolute;
         top: 60%;
         left: 0;
         width: 100%;
         height: auto;
+        @media (max-width: 428px) {
+          display: none;
+        }
       }
       .paintImg {
         position: absolute;
@@ -154,10 +218,14 @@
         left: 0;
       }
       .block {
+        padding-left: 50px;
         color: white;
         display: flex;
         flex-direction: column;
         gap: 25px;
+        @media (max-width: 428px) {
+          padding-left: 0;
+        }
         .titleBlock {
           display: flex;
           align-items: center;
@@ -170,31 +238,63 @@
           .title {
             font-family: Helvetica Neue, sans-serif;
             font-weight: 700;
-            font-size: 34px;
+            font-size: clamp(24px, 2.5vw, 34px);
             line-height: 100%;
             text-transform: uppercase;
+            @media (max-width: 428px) {
+              line-height: 30px;
+            }
           }
         }
         .description {
           font-family: Helvetica Neue, sans-serif;
-          width: 850px;
+          width: 100%;
+          max-width: 850px;
           font-weight: 400;
-          font-size: 20px;
+          font-size: clamp(16px, 2vw, 20px);
           line-height: 100%;
           padding-left: 20px;
+          @media (max-width: 1280px) {
+            line-height: 25px;
+          }
         }
       }
       .blockImgText {
-        padding-left: 10px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 30px;
+        gap: 20px;
         z-index: 9;
+        padding-left: 20px;
+        @media (max-width: 1281px) {
+          padding-left: 0;
+        }
+        @media (max-width: 884px) {
+          width: 100%;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          padding-left: 0;
+          gap: 60px;
+        }
+        @media (max-width: 835px) {
+          gap: 30px;
+        }
+        @media (max-width: 428px) {
+          padding-left: 17px;
+        }
         .cards {
           width: 294px;
           height: 420px;
           perspective: 1000px;
+          @media (max-width: 884px) {
+            width: 340px;
+          }
+          @media (max-width: 835px) {
+            width: 360px;
+          }
+          @media (max-width: 428px) {
+            width: 100%;
+          }
 
           .inner {
             width: 100%;
@@ -235,21 +335,33 @@
             padding: 20px;
             width: 254px;
             height: 380px;
-
+            @media (max-width: 884px) {
+              width: 320px;
+            }
+            @media (max-width: 428px) {
+              width: 400px;
+            }
             h6 {
               font-weight: 700;
-              font-size: 30px;
+              font-size: clamp(22px, 3vw, 30px);
               line-height: 100%;
               font-family: Helvetica Neue, sans-serif;
               color: #131313;
+              @media (max-width: 428px) {
+                font-size: 39px;
+              }
             }
 
             p {
               font-weight: 400;
               font-family: Helvetica Neue, sans-serif;
-              font-size: 20px;
+              font-size: clamp(16px, 2vw, 20px);
               line-height: 25px;
               width: 234px;
+              @media (max-width: 428px) {
+                font-size: 29px;
+                width: 100%;
+              }
             }
           }
         }

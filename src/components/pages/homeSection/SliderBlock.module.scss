@@ -81,10 +81,16 @@
 
 .left {
   left: 20pc;
+  @media (max-width: 835px) {
+    left: 3.4pc;
+  }
 }
 
 .right {
   right: 20pc;
+  @media (max-width: 835px) {
+    right: 3.4pc;
+  }
 }
 
 .dots {

@@ -40,11 +40,9 @@ const Form = () => {
       <div className="container">
         <div className={scss.content}>
           <div className={scss.BlockAll}>
-            <div className={scss.block1}>
-              <div className={scss.titleBlock}>
-                <p className={scss.subHr}></p>
-                <h3 className={scss.title}>Have a question?</h3>
-              </div>
+            <div className={scss.titleBlock}>
+              <p className={scss.subHr}></p>
+              <h3 className={scss.title}>Have a question?</h3>
             </div>
             <div className={scss.block2}>
               {questions.map((item, index) => (
