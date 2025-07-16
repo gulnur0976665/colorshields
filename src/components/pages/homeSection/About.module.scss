@@ -1,13 +1,18 @@
 .About {
+  display: none;
   position: relative;
   padding: 100px 130px;
   @media (max-width: 1280px) {
     padding: 100px 60px;
   }
+  @media (max-width: 1206px) {
+    padding: 100px 120px 0 60px;
+  }
   @media (max-width: 428px) {
     padding: 40px 10px;
     width: 0;
   }
+
   .content {
     color: white;
     display: flex;
@@ -164,10 +169,27 @@
             position: absolute;
             width: 100%;
             max-width: 940px;
-            top: 30px;
             left: 160px;
+            top: 30px;
             border-width: 1px;
             border: 1px solid gray;
+            @media (max-width: 1246px) {
+              left: 169px;
+              width: 811px;
+            }
+            @media (max-width: 1239px) {
+              left: 169px;
+              width: 805px;
+            }
+            @media (max-width: 1205px) {
+              width: 705px;
+            }
+            @media (max-width: 1137px) {
+              width: 640px;
+            }
+            @media (max-width: 1074px) {
+              width: 580px;
+            }
             @media (max-width: 884px) {
               width: 840px;
             }
@@ -243,6 +265,9 @@
       height: 355px;
       object-fit: cover;
       animation: floatUpDown 3s ease-in-out infinite;
+      @media (max-width: 1100px) {
+        display: none;
+      }
       @media (max-width: 835px) {
         width: 200px;
         height: 200px;
@@ -275,6 +300,24 @@
       @media (max-width: 1280px) {
         width: 1180px;
       }
+      @media (max-width: 1246px) {
+        width: 1100px;
+      }
+      @media (max-width: 1200px) {
+        width: 1020px;
+      }
+
+      @media (max-width: 1167px) {
+        width: 990px;
+      }
+      @media (max-width: 1100px) {
+        padding: 30px 0;
+        width: 920px;
+        height: auto;
+      }
+      @media (max-width: 1100px) {
+        width: 870px;
+      }
       @media (max-width: 835px) {
         width: 720px;
         height: auto;
@@ -288,6 +331,7 @@
         display: flex;
         flex-direction: column;
         gap: 30px;
+
         .titleBlock {
           padding: 0 40px;
           display: flex;
@@ -296,8 +340,7 @@
             padding: 0 10px;
           }
           .subHr {
-            width: 100%;
-            max-width: 38px;
+            width: 38px;
             border-width: 2px;
             transform: rotate(-90deg);
             border: 2px solid #fb4e4e;
@@ -323,7 +366,11 @@
       .blockIconsAll {
         display: flex;
         gap: 80px;
-        @media (max-width: 835px) {
+        @media (max-width: 1200px) {
+          gap: 30px;
+          padding: 0 30px;
+        }
+        @media (max-width: 1100px) {
           flex-direction: column;
           align-items: center;
         }
@@ -525,7 +572,7 @@
               background-color: #43454f;
               overflow: hidden;
               border-radius: 4px;
-              @media (max-width: 835px) {
+              @media (max-width: 1100px) {
                 width: 430px;
               }
               @media (max-width: 428px) {

@@ -20,9 +20,27 @@
 .heroTitle {
   font-family: Helvetica Neue, sans-serif;
   font-weight: 700;
-  font-size: 50px;
+  font-size: clamp(32px, 5vw, 50px);
   text-transform: uppercase;
   color: #fff;
+  @media (max-width: 1225px) {
+    font-size: 45px;
+  }
+  @media (max-width: 1040px) {
+    font-size: 40px;
+  }
+  @media (max-width: 978px) {
+    font-size: 34px;
+  }
+  @media (max-width: 890px) {
+    font-size: 30px;
+  }
+  @media (max-width: 600px) {
+    font-size: 23px;
+  }
+  @media (max-width: 510px) {
+    font-size: 18px;
+  }
 }
 
 .paintLeft,
@@ -38,6 +56,21 @@
   width: 331px;
   top: 230px;
   left: 0;
+  @media (max-width: 848px) {
+    top: 250px;
+  }
+  @media (max-width: 690px) {
+    object-fit: contain;
+    left: -80px;
+  }
+  @media (max-width: 600px) {
+    width: 260px;
+    left: -60px;
+  }
+  @media (max-width: 385px) {
+    width: 220px;
+    top: 230px;
+  }
 }
 
 .paintRight {
@@ -46,6 +79,21 @@
   right: 0;
   animation: floatDownUp 3s ease-in-out infinite;
   object-fit: cover;
+  @media (max-width: 1225px) {
+    top: 110px;
+  }
+  @media (max-width: 848px) {
+    width: 300px;
+  }
+  @media (max-width: 600px) {
+    width: 200px;
+  }
+  @media (max-width: 436px) {
+    width: 150px;
+  }
+  @media (max-width: 385px) {
+    width: 100px;
+  }
 }
 
 .paintBlue {
@@ -53,6 +101,9 @@
   right: 0;
   width: 255px;
   object-fit: contain;
+  @media (max-width: 1000px) {
+    width: 200px;
+  }
 }
 
 .paintRed {
@@ -61,6 +112,19 @@
   width: 347px;
   object-fit: contain;
   z-index: 10;
+  @media (max-width: 1000px) {
+    width: 290px;
+  }
+  @media (max-width: 678px) {
+    top: 1400px;
+  }
+  @media (max-width: 563px) {
+    top: 1500px;
+  }
+  @media (max-width: 534px) {
+    width: 150px;
+    top: 1600px;
+  }
 }
 
 .paintYellow {
@@ -69,6 +133,24 @@
   width: 300px;
   object-fit: contain;
   z-index: 10;
+  @media (max-width: 1000px) {
+    width: 200px;
+  }
+  @media (max-width: 678px) {
+    top: 55pc;
+  }
+  @media (max-width: 563px) {
+    top: 59pc;
+  }
+  @media (max-width: 534px) {
+    width: 150px;
+  }
+  @media (max-width: 480px) {
+    top: 30pc;
+  }
+  @media (max-width: 360px) {
+    top: 23pc;
+  }
 }
 
 .portfolioContent {
@@ -76,6 +158,15 @@
   flex-direction: column;
   gap: 30px;
   position: relative;
+  @media (max-width: 700px) {
+    margin-top: -80px;
+  }
+  @media (max-width: 420px) {
+    margin-top: -120px;
+  }
+  @media (max-width: 384px) {
+    margin-top: -160px;
+  }
 }
 
 .vectorBg {
@@ -107,6 +198,9 @@
 .ellipseRedLeft {
   top: 1550px;
   left: -126px;
+  @media (max-width: 534px) {
+    top: 2200px;
+  }
 }
 
 .project {
@@ -115,13 +209,24 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+  @media (max-width: 678px) {
+    padding-bottom: 20px;
+  }
+  @media (max-width: 352px) {
+    gap: 20px;
+  }
 }
 
 .projectHeader {
-  padding: 0 160px;
+  padding: 0 150px;
   display: flex;
   align-items: center;
-  gap: 22px;
+  @media (max-width: 1085px) {
+    padding: 0 90px;
+  }
+  @media (max-width: 1000px) {
+    padding: 0 20px;
+  }
 }
 
 .projectLine {
@@ -133,29 +238,56 @@
 .projectTitle {
   font-family: Helvetica Neue, sans-serif;
   font-weight: 700;
-  font-size: 34px;
+  font-size: clamp(24px, 3vw, 34px);
   text-transform: uppercase;
   color: #fff;
 }
 
 .projectBody {
-  padding: 0 117px;
   display: flex;
   align-items: center;
   gap: 30px;
+
+  @media (max-width: 679px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .projectGallery {
   display: flex;
   flex-wrap: wrap;
   gap: 13px;
-  width: 739px;
+  width: 100%;
+  max-width: 739px;
   max-height: 254px;
   overflow-y: auto;
   overflow-x: hidden;
   scroll-behavior: smooth;
   direction: rtl;
-
+  @media (max-width: 864px) {
+    height: 220px;
+  }
+  @media (max-width: 816px) {
+    height: 200px;
+  }
+  @media (max-width: 729px) {
+    height: 170px;
+  }
+  @media (max-width: 679px) {
+    align-items: center;
+    justify-content: center;
+  }
+  @media (max-width: 535px) {
+    height: 254px;
+  }
+  @media (max-width: 480px) {
+    height: 200px;
+  }
+  @media (max-width: 320px) {
+    height: 130px;
+  }
   &::-webkit-scrollbar {
     width: 6px;
   }
@@ -174,10 +306,61 @@
 }
 
 .projectImage {
-  width: 284px;
+  width: 100%;
+  max-width: 284px;
   height: 254px;
   border-radius: 16px;
   object-fit: cover;
+  @media (max-width: 969px) {
+    width: 100%;
+    max-width: 260px;
+  }
+  @media (max-width: 912px) {
+    width: 100%;
+    max-width: 240px;
+  }
+  @media (max-width: 864px) {
+    width: 100%;
+    max-width: 220px;
+    height: 220px;
+    border-radius: 10px;
+  }
+  @media (max-width: 816px) {
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+  }
+  @media (max-width: 765px) {
+    width: 100%;
+    max-width: 190px;
+    height: 190px;
+  }
+  @media (max-width: 729px) {
+    width: 100%;
+    max-width: 170px;
+    height: 170px;
+  }
+  @media (max-width: 535px) {
+    max-width: 234px;
+    height: 254px;
+    border-radius: 16px;
+  }
+  @media (max-width: 480px) {
+    max-width: 200px;
+    height: 200px;
+    border-radius: 10px;
+  }
+  @media (max-width: 412px) {
+    max-width: 170px;
+    border-radius: 10px;
+  }
+  @media (max-width: 360px) {
+    max-width: 150px;
+  }
+  @media (max-width: 320px) {
+    max-width: 130px;
+    height: 130px;
+  }
 }
 
 .projectText {
@@ -185,23 +368,29 @@
   flex-direction: column;
   gap: 21px;
   color: white;
+  @media (max-width: 912px) {
+    gap: 10px;
+  }
+  @media (max-width: 602px) {
+    padding: 0 30px;
+  }
 }
 
 .projectTextTitle {
   font-family: Helvetica Neue, sans-serif;
   font-weight: 700;
-  font-size: 30px;
+  font-size: clamp(20px, 2.5vw, 30px);
 }
 
 .projectDescription {
-  width: 599px;
+  width: 100%;
+  max-width: 599px;
   font-family: Helvetica Neue, sans-serif;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: clamp(16px, 2vw, 20px);
+  line-height: clamp(22px, 3vw, 28px);
 }
 
-/* Animations */
 @keyframes floatUpDown {
   0% {
     transform: translateY(0);
