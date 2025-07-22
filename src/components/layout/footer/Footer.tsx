@@ -106,9 +106,10 @@ const Footer = () => {
       .filter((k) => k !== "default")
       .map(Number)
       .sort((a, b) => a - b);
+
     let position = sectionMap.default;
 
-    for (let bp of breakpoints) {
+    for (const bp of breakpoints) {
       if (screenWidth <= bp) {
         position = sectionMap[bp.toString()];
         break;
