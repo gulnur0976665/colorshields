@@ -2,23 +2,53 @@
   background: #000;
   color: white;
   padding: 70px 130px 30px;
-
+  @media (max-width: 1004px) {
+    padding: 70px 50px 30px;
+  }
+  @media (max-width: 360px) {
+    padding: 40px 50px 30px;
+  }
   .footerContent {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 40px;
-
     .columns {
       display: flex;
       justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 40px;
-
+      @media (max-width: 585px) {
+        flex-wrap: wrap;
+      }
+      @media (max-width: 430px) {
+        gap: 40px;
+      }
+      @media (max-width: 384px) {
+        gap: 16px;
+      }
+      @media (max-width: 360px) {
+        justify-content: center;
+      }
+      @media (max-width: 333px) {
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+      }
       .logoBlock {
         .logoImage {
           width: 111px;
           height: 169px;
+          @media (max-width: 630px) {
+            width: 100px;
+            height: 150px;
+          }
+          @media (max-width: 394px) {
+            width: 90px;
+            height: 130px;
+          }
+          @media (max-width: 360px) {
+            width: 160px;
+            height: 220px;
+          }
         }
       }
 
@@ -26,7 +56,9 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
-
+        @media (max-width: 630px) {
+          gap: 10px;
+        }
         h5 {
           font-family: "Helvetica Neue", sans-serif;
           font-weight: 700;
@@ -34,6 +66,15 @@
           text-transform: uppercase;
           line-height: 100%;
           color: #fff;
+          @media (max-width: 753px) {
+            font-size: 15px;
+          }
+          @media (max-width: 630px) {
+            font-size: 13px;
+          }
+          @media (max-width: 333px) {
+            font-size: 20px;
+          }
         }
 
         p {
@@ -43,7 +84,12 @@
           font-size: clamp(14px, 1.8vw, 18px);
           line-height: 100%;
           color: #cbc9c9;
-
+          @media (max-width: 753px) {
+            font-size: 13px;
+          }
+          @media (max-width: 333px) {
+            font-size: 17px;
+          }
           &:hover {
             color: white;
           }

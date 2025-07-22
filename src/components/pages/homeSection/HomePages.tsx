@@ -14,8 +14,8 @@ const HomePages = () => {
 
     if (screenWidth <= 321) {
       scrollPosition = 1970;
-    } else if (screenWidth <= 769) {
-      scrollPosition = 1890;
+    } else if (screenWidth <= 428) {
+      scrollPosition = 1990;
     } else if (screenWidth <= 769) {
       scrollPosition = 1890;
     } else if (screenWidth <= 821) {
