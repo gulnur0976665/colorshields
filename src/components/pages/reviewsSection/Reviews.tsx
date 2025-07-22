@@ -35,7 +35,7 @@ const reviews = [
   },
   {
     img: img3,
-    title: "Steven Anderson",
+    title: "Steven ",
     fullDate: "2023-11-23",
     description:
       "Wonderful job, I love it! my house has been transformed with new floors!",
@@ -43,7 +43,7 @@ const reviews = [
 
   {
     img: img3,
-    title: "Steven Anderson",
+    title: "Steven ",
     fullDate: "2023-11-23",
     description:
       "Wonderful job, I love it! my house has been transformed with new floors!",
@@ -78,7 +78,7 @@ const reviews = [
   },
   {
     img: img3,
-    title: "Steven Anderson",
+    title: "Steven ",
     fullDate: "2023-11-23",
     description:
       "Wonderful job, I love it! my house has been transformed with new floors!",
@@ -86,7 +86,7 @@ const reviews = [
 
   {
     img: img3,
-    title: "Steven Anderson",
+    title: "Steven ",
     fullDate: "2023-11-23",
     description:
       "Wonderful job, I love it! my house has been transformed with new floors!",
@@ -108,7 +108,7 @@ const reviews = [
 
   {
     img: img3,
-    title: "Steven Anderson",
+    title: "Steven ",
     fullDate: "2023-11-23",
     description:
       "Wonderful job, I love it! my house has been transformed with new floors!",
@@ -143,7 +143,7 @@ const reviews = [
   },
   {
     img: img3,
-    title: "Steven Anderson",
+    title: "Steven ",
     fullDate: "2023-11-23",
     description:
       "Wonderful job, I love it! my house has been transformed with new floors!",
@@ -215,7 +215,6 @@ const Reviews = () => {
           ))}
         </div>
       </div>
-      <Image src={vector2} alt="vectorBg" className={scss.vector2} />
       <Form />
     </div>
   );

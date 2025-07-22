@@ -74,40 +74,35 @@ const About = () => {
                   steps
                 </h3>
               </div>
-              <div className={scss.blocknum}>
-                <div className={scss.hr}></div>
-                <div className={scss.block11}>
+              <div className={scss.textxHr}>
+                {" "}
+                <div className={scss.blocknum}>
+                  <div className={scss.hr}></div>
                   <div className={scss.tegerek}>
                     <p>1</p>
                   </div>
-                  <p>Surface Preparation</p>
-                </div>
-                <div className={scss.block11}>
                   <div className={scss.tegerek}>
                     <p>2</p>
                   </div>
-                  <p>
-                    Application of <br /> the base coat
-                  </p>
-                </div>{" "}
-                <div className={scss.block11}>
                   <div className={scss.tegerek}>
                     <p>3</p>
                   </div>
-                  <p>
-                    Application of the decorative <br /> and protective layer
-                  </p>
-                </div>{" "}
-                <div className={scss.block11}>
                   <div className={scss.tegerek}>
                     <p>4</p>
                   </div>
-                  <p>Drying and curing</p>
-                </div>
-                <div className={scss.block11}>
                   <div className={scss.tegerek}>
                     <p>5</p>
                   </div>
+                </div>
+                <div className={scss.texts1}>
+                  <p>Surface Preparation</p>{" "}
+                  <p>
+                    Application of <br /> the base coat
+                  </p>{" "}
+                  <p>
+                    Application of the decorative <br /> and protective layer
+                  </p>
+                  <p>Drying and curing</p>
                   <p>Final Finishing</p>
                 </div>
               </div>

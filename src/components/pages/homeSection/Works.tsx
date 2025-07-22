@@ -22,7 +22,6 @@ import galery5 from "../../../assets/galery5.png";
 import galery6 from "../../../assets/galery6.png";
 import galery10 from "../../../assets/galery10.png";
 import galery12 from "../../../assets/galery12.png";
-import paint from "../../../assets/Paint Can.G16 4 (1).png";
 import paintYellow from "../../../assets/Paint Can.G.png";
 import SliderBlock from "./SliderBlock";
 import { useRouter } from "next/navigation";
@@ -52,11 +51,11 @@ const Works = () => {
     responsive: [
       {
         breakpoint: 835,
-        settings: { slidesToShow: 2.5 },
+        settings: { slidesToShow: 3.5 },
       },
       {
         breakpoint: 428,
-        settings: { slidesToShow: 1.7 },
+        settings: { slidesToShow: 2 },
       },
     ],
   };
@@ -87,7 +86,6 @@ const Works = () => {
         </div>
         <Image src={ellipse} alt="paint" className={scss.ellipseImage1} />
         <Image src={paintYellow} alt="paint" className={scss.paintYellow} />
-        <Image src={paint} alt="paint" className={scss.paintImage} />
         <div className={scss.block2}>
           <Image src={ellipse1} alt="paint" className={scss.ellipseImage} />
           <div className={scss.blockText}>

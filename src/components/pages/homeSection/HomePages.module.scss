@@ -32,7 +32,6 @@
     top: 19%;
   }
   @media (max-width: 550px) {
-    // position: relative;
     top: 200px;
     flex-direction: column;
   }
@@ -159,6 +158,10 @@
         }
         @media (max-width: 550px) {
           height: 45px;
+        }
+        @media (max-width: 435px) {
+          width: 100%;
+          max-width: 400px;
         }
       }
 

@@ -12,6 +12,10 @@
     padding: 0 100px 40px;
     display: flex;
     align-items: center;
+    @media (max-width: 900px) {
+      padding: 0;
+      padding-left: 30px;
+    }
     .subHr {
       width: 38px;
       border-width: 2px;
@@ -22,8 +26,7 @@
       color: white;
       font-family: Helvetica Neue, sans-serif;
       font-weight: 700;
-      font-size: 34px;
-      line-height: 100%;
+      font-size: clamp(24px, 3vw, 34px);
       text-transform: uppercase;
     }
   }
@@ -36,23 +39,104 @@
     flex-direction: column;
     gap: 30px;
     cursor: pointer;
+    @media (max-width: 1246px) {
+      padding: 40px;
+    }
     .articleCard {
       padding: 20px 45px;
       display: flex;
       align-items: center;
       gap: 50px;
-      width: 1171px;
+      overflow: hidden;
+      width: 100%;
+      max-width: 1171px;
       height: 359px;
       opacity: 1;
       border-radius: 16px;
       background: #ffffff;
       box-shadow: 0px 2px 16px 0px #424c561a;
+      @media (max-width: 1246px) {
+        width: 1067px;
+      }
+      @media (max-width: 1210px) {
+        width: 1030px;
+      }
+      @media (max-width: 1170px) {
+        width: 1000px;
+      }
+      @media (max-width: 1140px) {
+        width: 970px;
+      }
+      @media (max-width: 1110px) {
+        width: 900px;
+      }
+      @media (max-width: 1040px) {
+        width: 850px;
+      }
+      @media (max-width: 985px) {
+        width: 800px;
+      }
+      @media (max-width: 940px) {
+        width: 800px;
+        padding: 0 25px;
+      }
+      @media (max-width: 900px) {
+        width: 760px;
+        gap: 20px;
+      }
+      @media (max-width: 860px) {
+        width: 730px;
+        gap: 20px;
+      }
+      @media (max-width: 830px) {
+        width: 700px;
+        gap: 20px;
+      }
+      @media (max-width: 800px) {
+        width: 670px;
+        gap: 20px;
+      }
+      @media (max-width: 770px) {
+        width: 630px;
+      }
+      @media (max-width: 730px) {
+        width: 600px;
+      }
+      @media (max-width: 700px) {
+        width: 560px;
+      }
+      @media (max-width: 655px) {
+        width: 520px;
+      }
+      @media (max-width: 620px) {
+        width: 490px;
+      }
+      @media (max-width: 600px) {
+        flex-direction: column;
+        height: auto;
+        padding: 0;
+      }
+      @media (max-width: 540px) {
+        width: 100%;
+        max-width: 450px;
+      }
       .imageContainer {
         position: relative;
         overflow: hidden;
         width: 583px;
         height: 365px;
         border-radius: 16px;
+        @media (max-width: 940px) {
+          width: 500px;
+          height: 300px;
+        }
+        @media (max-width: 900px) {
+          border-radius: 10px;
+        }
+        @media (max-width: 800px) {
+          width: 530px;
+        }
+
         .articleImage {
           object-fit: cover;
         }
@@ -61,23 +145,59 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
+        @media (max-width: 800px) {
+          padding: 0 20px 0 0;
+          width: 400px;
+        }
+        @media (max-width: 770px) {
+          width: 370px;
+        }
+        @media (max-width: 600px) {
+          gap: 10px;
+          padding-bottom: 20px;
+        }
+        @media (max-width: 540px) {
+          width: 100%;
+          max-width: 350px;
+        }
+        @media (max-width: 490px) {
+          width: 100%;
+          max-width: 300px;
+        }
+        @media (max-width: 430px) {
+          width: 100%;
+          max-width: 260px;
+        }
+        @media (max-width: 390px) {
+          width: 100%;
+          max-width: 230px;
+        }
+        @media (max-width: 350px) {
+          width: 100%;
+          max-width: 200px;
+        }
+        @media (max-width: 320px) {
+          width: 100%;
+          max-width: 160px;
+        }
         .articleHeader {
           display: flex;
           flex-direction: column;
           gap: 10px;
+          @media (max-width: 600px) {
+            gap: 5px;
+          }
           .articleAuthor {
             font-family: Helvetica Neue, sans-serif;
             font-weight: 500;
             font-style: Medium;
-            font-size: 24px;
-            line-height: 100%;
+            font-size: clamp(14px, 2vw, 24px);
           }
           .articleMeta {
             font-family: Helvetica Neue, sans-serif;
             font-weight: 500;
             font-style: Medium;
-            font-size: 16px;
-            line-height: 100%;
+            font-size: clamp(14px, 2vw, 16px);
             color: #131313;
           }
         }
@@ -85,23 +205,42 @@
           display: flex;
           flex-direction: column;
           gap: 20px;
+          @media (max-width: 600px) {
+            gap: 10px;
+          }
+
           .articleTitle {
             width: 478px;
             font-family: Helvetica Neue, sans-serif;
             font-weight: 700;
-            font-style: Bold;
-            font-size: 35px;
-            line-height: 100%;
+            font-size: clamp(25px, 3vw, 35px);
             color: #131313;
+            @media (max-width: 770px) {
+              width: 300px;
+              font-size: 20px;
+            }
+            @media (max-width: 655px) {
+              width: 250px;
+            }
+            @media (max-width: 600px) {
+              width: 100%;
+            }
           }
           .articleSummary {
-            width: 473px;
+            width: 100%;
+            max-width: 473px;
             font-family: Helvetica Neue, sans-serif;
             font-weight: 400;
             font-style: Regular;
-            font-size: 18px;
-            line-height: 100%;
+            font-size: clamp(15px, 2vw, 18px);
             color: #131313;
+            @media (max-width: 600px) {
+              width: 413px;
+            }
+            @media (max-width: 540px) {
+              width: 100%;
+              max-width: 450px;
+            }
           }
         }
       }
