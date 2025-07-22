@@ -5,7 +5,6 @@ import leftPaint from "../../../assets/Paint Can.G16 8 (1).png";
 import rightPaint from "../../../assets/Paint Can.G16 3.png";
 import Image from "next/image";
 import vectorBg from "../../../assets/Vector bg.png";
-import vector2 from "../../../assets/Vector 2.png";
 import paintYellow from "../../../assets/Paint Can.G.png";
 import paintRed from "../../../assets/Paint Can.G16 5.png";
 import paintBlue1 from "../../../assets/Paint Can.G16 4.png";
