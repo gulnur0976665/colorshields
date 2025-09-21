@@ -7,7 +7,7 @@ const api = index.injectEndpoints({
       PORTFOLIO.portfolioRequest
     >({
       query: () => ({
-        url: "/portfolio",
+        url: "/portfolio/",
         method: "GET",
       }),
       providesTags: ["portfolio"],

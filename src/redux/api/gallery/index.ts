@@ -4,7 +4,7 @@ const api = index.injectEndpoints({
   endpoints: (build) => ({
     gallery: build.query<GALLERY.galleryResponse, GALLERY.galleryRequest>({
       query: () => ({
-        url: "/gallery",
+        url: "/gallery/",
         method: "GET",
       }),
       providesTags: ["gallery"],
